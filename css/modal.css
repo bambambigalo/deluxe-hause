@@ -1,0 +1,134 @@
+.modal {
+
+}
+.modal.open .modal_overlay,
+.modal.open .modal_window {
+    opacity: 1;
+    z-index: 15;
+}
+.modal.anim .modal_overlay,
+.modal.anim .modal_window {
+    opacity: 1;
+    z-index: 15;
+}
+.modal.open .modal_window {
+    transform: translateY(0px);
+    transition: transform .2s ease-out;
+}
+.modal.open .modal_overlay {
+    background-color: rgba(20, 20, 20, 0.5);
+}
+.modal.anim .modal_window {
+    transform: translateY(-650px);
+    transition: transform .2s ease-out;
+}
+.modal.anim .modal_overlay {
+    background-color: rgba(0, 0, 0, 0);
+}
+.modal_overlay,.modal_window {
+    opacity: 0;
+    z-index: -1;
+}
+
+
+
+.modal_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color .2s ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.modal_window {
+    display: flex;
+    flex-direction: column;
+    width: 440px;
+    height: 308px;
+    background: #E1DECE;
+    border: 2px solid #191919;
+    border-radius: 5px;
+    transform: translateY(-650px);
+    transition: transform .2s ease-out;
+}
+.modal_header {
+    display: flex;
+    justify-content: end;
+}
+.close {
+    margin-right: 13px;
+    margin-top: 10px;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-image: url('../img/modal_img/х.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color:#191919 ;
+    cursor: pointer;
+}
+.modal_box {
+    margin-top: 2%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.modal_box_send {
+    margin-top: 12%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.modal_content {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.title_modal {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center; 
+    font-family: 'RobotoRegular';
+}
+.text_modal {
+    margin-top: 2%;
+    width: 70%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center; 
+    font-family: 'RobotoRegular';
+}
+.text_modal_segoe {
+    margin-top: 2%;
+    width: 70%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center; 
+    font-family: 'SegoeScript';
+}
+.modal_footer {
+    width: 100%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    
+}
+.modal_form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+
