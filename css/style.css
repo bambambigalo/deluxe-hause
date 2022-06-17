@@ -1961,7 +1961,7 @@ footer {
 
   @font-face {
     font-family: RobotoBold;
-    src: url(/fonts/Roboto-Bold.ttf);
+    src: url(./fonts/Roboto-Bold.ttf);
     font-weight: bold;
   }
   @font-face {
